@@ -1,6 +1,6 @@
 # pytumblr3
 
-pytumblr2 with some extras.
+[pytumblr2](https://github.com/nostalgebraist/pytumblr2) with some extras.
 
 This is definitely not polished; it's mostly just a bunch of helpers I use in some of my projects.
 
