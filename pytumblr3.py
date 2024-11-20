@@ -96,7 +96,9 @@ class Post(TypedDict):
     
     def get_images(self):
         # TODO: handle videos?
-        posts = [self, *self['trail']]
+        posts = [self]
+        if 'trail' in self:
+            posts += self['trail']
         for p in posts:
             for block in p['content']:
                 if block['type'] != 'image':
