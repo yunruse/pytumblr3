@@ -100,7 +100,7 @@ class Post(TypedDict):
         if 'trail' in self:
             posts += self['trail']
         for p in posts:
-            for block in p['content']:
+            for block in p.get('content', []):
                 if block['type'] != 'image':
                     continue
                 yield {
